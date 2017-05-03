@@ -1,8 +1,8 @@
 function allInputs () {
   $('#textOutput').text($('#textInput').val());
   $('#colorOutput').text($('#colorInput').val());
-  $('#radioOutput').text($('#radioInput').val());
-  $('#checkOutput').text($('#checkInput').val());
+  $('#radioOutput').text($('#radioInput:checked').val());
+  $('#checkOutput').text($('#checkInput').prop('checked'));
   $('#dateOutput').text($('#dateInput').val());  
   $('#datetimeOutput').text($('#datetimeInput').val());  
   $('#monthOutput').text($('#monthInput').val());    
